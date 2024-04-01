@@ -1,0 +1,1127 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+h1, h2 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #000;
+}
+#banner {
+  display: none
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  height: 100%
+}
+body {
+  line-height: inherit;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+#container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  min-height: calc(100vh - 4.5rem);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 16px 20px 6px #cccccc;
+  box-shadow: 0px 16px 20px 6px #cccccc;
+  background-color: #fff;
+}
+#middle_matter {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%
+}
+#content {
+  padding: 0 1rem 1rem 1rem;
+  float: right;
+  width: 75%;
+}
+#menus {
+  margin-top: 1rem;
+  float: right;
+  width: 75%;
+}
+#header {
+  background-color: #fff;
+  height: 5.8rem;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+}
+#oup_logo, #banner {
+  flex: 1 0 auto
+}
+#oup_logo {
+  padding: 1.2rem;
+}
+#banner img {
+  float: right
+}
+#breadcrumb {
+  padding: 0.1rem 1rem 0.2rem;
+  background-color: #000;
+  color: #fff;
+}
+#breadcrumb a {
+  color: #fff;
+  font-weight:bold;
+}
+#breadcrumb a:hover {
+  text-decoration: underline
+}
+span.breadcrumbsep{font-weight:bold}
+#addthis {
+  text-align: center;
+  margin: 1rem auto
+}
+ul {
+  list-style: none;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+#bottom, #book_image, .hidden {
+  display: none;
+}
+#book_logo img {
+  width: 320px;
+  height: 99px;
+}
+.home-features {
+  border: 1px solid #ccc;
+  width: 35%;
+  float: left;
+  padding: 0 1rem;
+  margin: 1rem
+}
+.home-features li {
+  margin-bottom: 1rem
+}
+.home_page h4 {
+  font-size: 1rem;
+  color: #00508B;
+  border: none;
+  margin: 1rem 0;
+  font-weight: bold
+}
+.home_page h1 {
+  font-weight: bold;
+  color: #000;
+  font-size: 2rem
+}
+.levels {
+  text-align: center;
+  margin: 1rem auto;
+}
+.levels li {
+  width: 200px;
+  display: inline-block;
+  margin-bottom: 1rem
+}
+.levels li a {
+  font-weight: bold
+}
+.levels li a img:hover {
+  transform: rotate(-5deg);
+}
+.levels li a:hover {
+  text-decoration: underline
+}
+/*Concertina*/
+#sections {
+  margin: 1rem 0;
+  background-color: #fff
+}
+#sections h2 {
+  border-bottom: none;
+  margin-top: 1rem;
+}
+#sections h2 a {
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.6rem;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px 0px #ccc;
+  background: url(../images/concertina-toggles.png) no-repeat 96% 140%
+}
+#sections h2 a.down {
+  box-shadow: 0px 0px 5px 0px #ccc;
+  background-position: 96% -40%
+}
+#sections ul {
+  list-style: none;
+}
+#sections li a {
+  display: block;
+  width: 70%;
+  padding: 1rem;
+  float: left
+}
+#sections li .file_info {
+  display: block;
+  width: 20%;
+  float: right;
+  padding: 1rem 0;
+  font-size: 0.8rem
+}
+.section {
+  box-shadow: 0px 5px 5px 0px #ccc
+}
+.section li {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc
+}
+#footer {
+  clear: both;
+  width: 100%;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #002147;
+  text-align: center;
+  line-height: 2em;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+#footerinner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#footerinner p.fl-left, #footerinner ul.fl-right {
+  text-align: center;
+  float: none;
+  margin: 0.2rem auto;
+  padding: 0;
+}
+#footer li {
+  display: inline;
+  color: #ffffff;
+}
+#footer li a {
+  color: #ffffff;
+}
+/*BREAK IT*/
+/* Title for homepage */
+h3 {
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 14pt;
+  font-weight: normal;
+}
+h4 {
+  color: #999;
+  font-size: 11pt;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #999;
+}
+hr {
+  color: #0099CC;
+  height: 1px;
+  width: 95%;
+}
+#header {
+  border: 0px solid #000;
+}
+.bc_padding {
+  width: 5px
+}
+#children {
+  width: 80%;
+  margin: 0px 0px 15px 15px;
+}
+#children ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+#children a {
+  color: #000099;
+  text-decoration: none;
+  font-weight: bold;
+}
+#children a:hover {
+  text-decoration: underline;
+  color: #0099FF;
+}
+#children li {
+  margin-bottom: 0.7em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+}
+.child {
+  display: block;
+}
+/* middle matter*/
+.rubric {
+  font-weight: bold;
+  margin-bottom: 1rem
+}
+#navigation {
+  float: left;
+  width: 25%
+}
+#navigation ul {
+  margin: 1rem 0
+}
+#navigation li {
+  margin: 0.3rem 0.6rem;
+  background-color: #eee
+}
+#navigation li a {
+  font-size: 1rem;
+  padding: 0.4rem;
+  display: block;
+  font-weight: bold
+}
+#navigation li a:hover {
+  color: #0099ff
+}
+#book_image {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#menus {
+  background-color: #fff;
+  color: #333333;
+}
+.form {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#exercise form li {
+  margin-bottom: 1em
+}
+.content {
+  width: 588px;
+}
+.links {
+  font-size: 10pt;
+  text-indent: 5pt;
+  padding-bottom: 4px;
+}
+#bottom {
+  margin-bottom: 10px;
+}
+#breadcrumblink a {
+  font-size: 10pt;
+  text-decoration: underline;
+}
+#breadcrumblink a:hover {
+  text-decoration: none;
+}
+#news {
+  border: 1px solid #da2128;
+  padding: 0px 0px 0px 10px;
+}
+a#book_logo {
+  border: 0px;
+}
+.sections-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sections-menu li {
+  display: flex;
+  flex: 0 1 48%;
+  padding: 0;
+  margin-bottom: 1rem
+}
+.sections-menu h4 {
+  border: 0;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.1rem;
+}
+.sections-menu li a {
+  display: block;
+  width: 100%;
+  box-shadow: 2px 3px 5px #eee;
+  background: url("../../students/englishfile/images/english-file-icon-beginner.gif") no-repeat 0 center;
+  padding: 0.4rem;
+  padding-left: 5rem;
+  background-size: 4rem
+}
+.sections-menu li a p {
+  color: #000
+}
+.sections-menu li a:hover {
+  box-shadow: none
+}
+/* global exercise styles */
+#childrenNav span {
+  font-weight: bold
+}
+#childrenNav li a {
+  background-repeat: no-repeat;
+  float: left;
+  height: 80px;
+  padding: 0.2rem 0.2rem 0.2rem 5rem;
+  display: block;
+  width: 100%;
+}
+#childrenNav p {
+  margin-left: 5px;
+  color: #000;
+}
+#childrenNav li {
+  background: #c0ced5; /* Old browsers */
+  background: linear-gradient(to right, #c0ced5 0%, #e0e7ea 50%, #f8fafa 100%); /* W3C */
+  display: inline-block;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 48%;
+  min-width: 310px;
+}
+.downloads a {
+  background: url("../../students/images/icon-download.png") no-repeat 1rem center;
+}
+#childrenNav a:hover {
+  text-decoration: none;
+  background-color: #c0e8fb;
+}
+.title {
+  font-weight: bold;
+  color: black;
+  padding-bottom: 20px;
+  font-size: 1.2em
+}
+.exercise_row {
+  margin-bottom: 8px
+}
+.exercise_number {
+  font-weight: bold;
+  padding-right: 7px;
+}
+.exercise_marking {
+  padding-left: 15px;
+}
+.exercise_buttons {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.exercise_buttons input {
+  padding: 0.4em
+}
+.GF_wordsfill {
+  font-weight: bold;
+  word-spacing: 15px;
+}
+li span.exercise_text {
+  padding: 0 0 1em 0
+}
+/*exercise word ordering*/
+.exercise_linktext {
+  color: #000099;
+}
+.exercise_inputbox {
+  background-color: #eeeeee;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  margin-left: 15px;
+}
+.weblinks_box {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  border: 1px solid black
+}
+.weblinks {
+  font-size: 11pt;
+}
+.weblinks_bottomborder {
+  border-bottom: 1px solid grey;
+}
+.level_title {
+  font: bold 11pt Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+/*exercise sentencematching*/
+.upper_alpha {
+  font-weight: bold;
+  margin: 0 15px 0 10px;
+}
+.sentencematching {
+  clear: both;
+  padding: 10px 0px 10px 0px;
+  margin: 0;
+}
+.sentencematching .exercise_text {
+  width: 35%;
+  background-color: #eee;
+  padding: 3px;
+}
+.sentencematching span {
+  float: left;
+  display: block;
+}
+.sentencematching input {
+  float: left;
+}
+.SM_number {
+  font-weight: bold;
+  padding-right: 7px;
+  padding-top: 4px;
+  vertical-align: top;
+}
+.SM_inputbox {
+  width: 30px;
+  vertical-align: top;
+}
+.SM_marking {
+  vertical-align: top;
+  width: 20px;
+  text-align: left;
+}
+.SM_questionarray {
+  width: 210px;
+  vertical-align: top;
+  padding-left: 4px;
+  background-color: #EEEEEE;
+  border-right: 8px solid white;
+  border-bottom: 4px solid white;
+}
+.SM_letter {
+  font-weight: bold;
+  padding-right: 6px;
+  padding-left: 4px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #EEEEEE;
+  border-bottom: 4px solid white;
+}
+.SM_answerarray {
+  width: 210px;
+  vertical-align: top;
+  background-color: #EEEEEE;
+  border-bottom: 4px solid white;
+}
+.SM_buttons {
+  padding-top: 15px;
+}
+/*exercise spotthemistake*/
+.exercise_spot {
+  font-size: 11pt;
+}
+.exercise_spot a:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none
+}
+.exercise_spot a:link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none
+}
+.exercise_checkbox {}
+/* Odd one out styles */
+.O1out_leftcolumn {
+  display: inline;
+  width: 100px;
+  float: left;
+  font-weight: bold;
+  word-spacing: 6pt;
+  padding-left: 5px;
+}
+.O1out_middlecolumn {
+  display: inline;
+  width: 295px;
+  float: left;
+  text-align: left;
+  word-spacing: 6pt;
+}
+.O1out_rightcolumn {
+  display: inline;
+  width: 145px;
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+}
+.O1out_column {
+  border: 1px solid #BBBBBB;
+  text-align: right;
+  width: 517px;
+  padding: 3pt 22pt 3pt 3pt;
+  font-weight: bold;
+  float: right;
+}
+#odd1out {
+  width: 550px;
+  font-size: 13px;
+}
+#O1out_row {
+  width: 100%;
+  padding: 5px 0px 2px 0px;
+  border-right: 1px solid #BBBBBB;
+  border-left: 1px solid #BBBBBB;
+  border-bottom: 1px dashed #BBBBBB;
+  background-color: #EEEEEE;
+  float: right;
+}
+.O1out_answer {
+  padding-right: 64px;
+  display: inline;
+}
+/*Exercises*/
+#wordordering li {
+  margin-top: 0.6rem
+}
+#wordordering a {
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-top: 10px
+}
+#wordordering a:hover {
+  color: red
+}
+#wordordering a:visited {
+  color: #333
+}
+#wordordering a:active {
+  color: #333
+}
+.wordordering_gapfillbox {
+  background-color: #eee;
+  margin-top: 4px;
+  border-bottom: 2px solid #999;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  width: 90%;
+  margin-bottom: 10px
+}
+.exercise_linktext {
+  color: #009
+}
+.weblinks_box {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.2rem;
+  border: 1px solid black
+}
+.weblinks {
+  font-size: 0.8rem
+}
+.weblinks_bottomborder {
+  border-bottom: 2px solid black
+}
+#spotthemistake a {
+  color: #000;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 2px
+}
+#spotthemistake a:hover {
+  border: 1px solid red
+}
+#spotthemistake a:active {
+  border: 1px solid red
+}
+#spotthemistake li {
+  margin-bottom: 10px
+}
+.exercise_spot_number {
+  padding-right: 4px;
+  font-weight: bold
+}
+.exercise_spot_row {
+  margin-bottom: 10px
+}
+.exercise_spot_row a:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none
+}
+.exercise_spot_row a:link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none
+}
+#errorcorrection input {
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  width: 100px;
+  background-color: #eee
+}
+#errorcorrection a {
+  text-decoration: none;
+  color: #000
+}
+#errorcorrection a:hover {
+  background-color: #000;
+  color: #fff
+}
+legend, label {
+  font-size: small;
+  color: #333333
+}
+fieldset {
+  display: inline
+}
+.scorebox {
+  border: 1px solid #f93;
+  width: 20px;
+  height: 20px;
+  font-size: small;
+  color: #039;
+  text-align: center;
+  font-weight: bold
+}
+#emailtop {
+  padding: 10px 0 5px 5px;
+  font-size: 7px;
+  color: #99f;
+  background: #eee url("/images/elt/adultlist/adultlist_emailtop.gif") repeat-x top
+}
+#emailtext {
+  background-color: #fff;
+  border-left: 4px solid #eee;
+  border-right: 4px solid #eee;
+  padding: 5px;
+  text-align: left;
+  overflow: hidden;
+  line-height: 20px
+}
+#emailexercise {
+  background: #eee url("/images/elt/adultlist/adultlist_emailbottom.gif") repeat-x bottom;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 98%;
+  overflow: hidden;
+  border: 1px solid #999
+}
+.email_buttons {
+  background-color: #eee;
+  margin: 10px 0 10px 12px
+}
+#emailtext sup {
+  margin-left: 3px;
+  margin-right: 3px
+}
+#help p {
+  margin: 4px 0 4px 0
+}
+/* Misc */
+#home_page p.introText {
+  font-weight: bold;
+  font-size: 18px;
+}
+.flash {
+  color: #0071B8;
+  font-weight: bold;
+  text-decoration: none;
+}
+#levels {
+  float: left;
+  left: 13px;
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+}
+#levels li {
+  list-style-type: none;
+}
+#levels a {
+  display: block;
+}
+#levels img {
+  margin: 5px;
+}
+#levels1 {
+  float: left;
+  position: relative;
+  right: 23px;
+  text-decoration: none;
+  top: 10px;
+}
+#levels1 li {
+  list-style-type: none;
+}
+#levels1 a {
+  display: block;
+}
+#levels1 img {
+  margin: 5px;
+}
+.clear {
+  clear: both;
+}
+a {
+  text-decoration: none
+}
+.it {
+  display: none
+}
+/*Pron*/
+#practice, #learn {
+  margin: 0;
+  padding: 0
+}
+#switchcontrols {
+  border-bottom: 2px solid #333;
+  margin-top: 16px
+}
+#switchcontrols a {
+  text-decoration: none;
+  background-color: #eee;
+  padding: 0.6rem 1rem 0.2rem 1rem;
+  display: block;
+  display: inline;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+#switchcontrols a:hover {
+  font-weight: bold
+}
+#switchcontrols a.initial {
+  color: #fff;
+  background-color: #333
+}
+/* Pronunciation Chart */
+#audiodictionary ul {
+  padding: 3%;
+  width: auto;
+  list-style: none;
+  overflow: hidden;
+  float: left
+}
+#audiodictionary a:link {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.4rem
+}
+#audiodictionary ul a:hover {
+  border: 3px solid #F93
+}
+#audiodictionary ul a:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #F93
+}
+#audiodictionary li {
+  display: inline-block;
+  width: 110px;
+}
+#audiodictionary li a {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+#audiodictionary li img {
+  margin: auto;
+}
+#audiodictionary .section li {
+  border-bottom: 0
+}
+#audiofallback {
+  border: 2px dotted #FC6;
+  background-color: #fff;
+  padding: 1em
+}
+.shortvowel a, .shortvowel span {
+  border: 3px solid #ad4c2f;
+}
+.longvowel a, .longvowel span {
+  border: 3px solid #feef3c;
+}
+.diphthong a, .diphthong span {
+  border: 3px solid #bab7cd;
+}
+.voiced a, .voiced span {
+  border: 3px solid #445995;
+}
+.unvoiced a, .unvoiced span {
+  border: 3px solid #429c95;
+}
+#audiodictionary .wide {
+  width: auto;
+  margin: 0 0 0 18px
+}
+#audiodictionary p {
+  clear: both
+}
+#audiodictionary p a:link, #audiodictionary span {
+  padding: 0.2em;
+  margin: 0.2em;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#audiodictionary p {
+  float: left;
+  padding: 0 0 2%
+}
+#audiodictionary span {
+  font-size: 0.8em
+}
+#audiodictionary .legend {
+  width: 100%;
+  padding: 0 0 5% 6%
+}
+#audiodictionary ul.legend li {
+  width: 22%;
+  padding: 5px
+}
+.legend {
+  font-size: .9em
+}
+#pronuncApp {
+  clear: both
+}
+/*Concertina*/
+#sections {
+  margin: 1rem 0
+}
+#sections h2 {
+  border-bottom: none;
+  margin-top: 1rem;
+  font-size: 1rem
+}
+#sections h2 a {
+  display: block;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px 0px #ccc;
+  background: url(../images/concertina-toggles.png) no-repeat 96% 200%
+}
+#sections h2 a.down {
+  box-shadow: 0px 0px 5px 0px #ccc;
+  background-position: 96% -100%
+}
+#sections ul {
+  list-style: none;
+}
+#sections li a {
+  display: block;
+  width: 70%;
+  padding: 1rem;
+  float: left
+}
+#sections li .file_info {
+  display: block;
+  width: 20%;
+  float: right;
+  padding: 1rem 0;
+  font-size: 0.8rem
+}
+.section {
+  box-shadow: 0px 5px 5px 0px #ccc
+}
+.section li {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc
+}
+.speaker {
+  float: left;
+  font-weight: bold;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem
+}
+#showhide {
+  overflow: auto
+}
+#showhide p {
+  display: block;
+  overflow: auto
+}
+#showhide img {
+  margin: 1rem 0 1rem 0.6rem
+}
+p.controls {
+  clear: both;
+  padding-top: 0.6rem
+}
+/*Exercises*/
+span.xanswer {
+  display: none;
+  font-weight: bold;
+  background-color: #FF9;
+  border: 1px solid #ccc;
+  padding: 0.1rem 0.3rem;
+}
+#form1 ol li img {
+  margin: 0 0.4rem
+}
+img[src*="exercise_transparent.gif"] {
+  display: none
+}
+.controls input {
+  padding: 0.4rem;
+  color: #454545;
+}
+a[href*="https://play.google.com"] {
+  margin-left: 230px
+}
+a:hover[href*="https://play.google.com"] {
+  opacity: .50;
+  filter: alpha(opacity=50)
+}
+a:hover[href*="https://itunes.apple.com"] {
+  opacity: .50;
+  filter: alpha(opacity=50)
+}
+.app {
+  margin-left: 30px;
+  padding-bottom: 10px
+}
+#pronuncApp {
+  clear: both;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1
+}
+#col1 {
+  width: 48%;
+  float: left
+}
+#col2 {
+  width: 48%;
+  float: right
+}
+#col1 p, #col2 p {
+  padding: 5px 0 15px 0
+}
+#form1_feedback {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  background-color: #27356e;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #fff;
+}
+ul.ordertarget {
+  background-color: #eee;
+  width: 400px;
+  padding: 0;
+  margin: 0px;
+  list-style-type: none;
+}
+.ordertarget .mark {
+  background-color: #fff;
+  display: block;
+  float: left;
+  border-bottom: 2px solid #fff;
+}
+span.order_number {
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding-right: 6px;
+  color: #333;
+  font-size: 1.2em;
+}
+ol.orderblock {
+  list-style: none;
+  padding: 0px;
+  margin: 1em 0 1em 2.2em;
+}
+ol.inline li, #form1 ul.ordertarget li {
+  display: inline;
+}
+ol.orderblock li {
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin: 3px;
+}
+ol.inline li a, ul.ordertarget li a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.2rem;
+}
+form ol {
+  line-height: 2.4em;
+  list-style-position: inside;
+}
+select {
+  margin: 0 0 0 0.4rem;
+  padding: 0.1rem;
+}
+#menus form {
+  background-color: #eee;
+  margin-bottom: 0.6rem;
+  padding: 0.4rem
+}
+#navigation a[href*=".pdf"] {
+  display: none
+}
+@media screen and (max-width: 520px) {
+  #col1, #col2 {
+    width: auto;
+    float: none
+  }
+  #content, #navigation, #menus {
+    float: none;
+    width: 100%
+  }
+  #book_logo {
+    display: none
+  }
+  .levels {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px
+  }
+  .levels li {
+    max-width: 80%
+  }
+  #banner {
+    display: none
+  }
+  #oup_logo {
+    width: 100%;
+    text-align: center
+  }
+  .sections-menu li {
+    flex: 0 1 100%
+  }
+}

@@ -1,0 +1,85 @@
+// JavaScript Document
+//SD Can be used with any number of questions and any number of options - in a list or paragraph. <form> markup should be in the page.
+//global variables
+var tickgraphic="bien.png";
+var crossgraphic="mal.png";
+var blankgraphic="punto.png";
+
+//set up images which will be set when the score function is selected
+function setup(){
+	var varfocus = document.getElementById("content")
+var eanswers = varfocus.getElementsByTagName("select");
+	  for (var i=0; i<eanswers.length; i++) {
+	  var thisanswer=eanswers[i]
+	  var imgid="imgid"+thisanswer.id;
+		var marker=document.createElement('img');
+		marker.setAttribute('alt','mark');
+		marker.setAttribute('src',blankgraphic);
+		marker.setAttribute('id',imgid);
+		var next=thisanswer.nextSibling;
+		thisanswer.parentNode.insertBefore(marker,next)
+	}
+	}
+	
+//If score, only the selected form is scored. Feedback is then displayed in the form[x]_feedback element. Needs markup with relevant ids
+function scoreit(section){
+var equestions = document.getElementById(section);
+var eanswers = equestions.getElementsByTagName("select");
+var efeedback = section+"_feedback";
+var efeedback_score = section+"_feedback_score";
+var score=0;
+  for (var i=0; i<eanswers.length; i++ ) {
+	  var thisanswer=eanswers[i]
+	  var selectedanswer=thisanswer.options[thisanswer.selectedIndex].value;
+	for (var k=0; k<thisanswer.options.length; k++){
+		var check=thisanswer.options[k]
+		var imgid="imgid"+thisanswer.id;
+		var imagemark=document.getElementById(imgid)
+		if(check.value == 1 && selectedanswer==check.value) {
+				score++;
+				imagemark.setAttribute('src',tickgraphic)
+				imagemark.setAttribute('alt','correct')
+				} 
+		if(check.value == 0 && selectedanswer==check.value){
+				imagemark.setAttribute('src',crossgraphic)
+				imagemark.setAttribute('alt','wrong')}
+		  } 
+  }
+  var thisfeedback="Your score is " +score+ " / " + eanswers.length;
+  document.getElementById(efeedback).style.display = "block";
+document.getElementById(efeedback_score).innerHTML=thisfeedback;
+	}
+
+//If reset this, the ticks and crosses are all set to blank and the selected options are set back to the first one in the list - assume the number of ticks = the number of questions. feedback div is then set to display none.
+function resetthis(section){
+	var equestions = document.getElementById(section);	
+var eanswers = equestions.getElementsByTagName("select")
+	for (i=0; i<eanswers.length; i++){
+	eanswers[i].selectedIndex=eanswers[0];
+	var markresetcounter=eanswers[i].id.split('equestion')[1]
+	var imgreset=document.getElementById("imgidequestion"+markresetcounter)
+	 if (imgreset.alt=='correct' || imgreset.alt=='wrong' ){
+	 imgreset.src=blankgraphic;
+	}	
+		}
+		var efeedback = section+"_feedback";
+		document.getElementById(efeedback).style.display = "none";
+	}
+	
+//If show answers, reset the form to clear images and then show the correct answers.
+function showanswers(section){
+	resetthis(section);
+var equestions = document.getElementById(section);
+var eanswers = equestions.getElementsByTagName("select")
+  for (var i=0; i<eanswers.length; i++ ) {
+	  var thisanswer=eanswers[i]
+	  for (var k=0; k<thisanswer.options.length; k++){
+		var check=thisanswer.options[k]
+			if(check.value == 1) {
+				check.selected =true;
+				} 
+		  }
+	  
+  }
+}
+	  
